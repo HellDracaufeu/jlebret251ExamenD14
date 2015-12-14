@@ -1,5 +1,8 @@
 package fr.univtln.master.lebret;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by RedQueen on 14/12/2015.
  */
@@ -17,5 +20,12 @@ public class Polyedre extends Figure{
         nb++;
     }
 
+    public List getCenter(){
+        return null;
+    }
+
+    public double getArea(){
+        return 0;
+    }
 
 }

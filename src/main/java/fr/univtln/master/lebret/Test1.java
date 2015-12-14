@@ -12,6 +12,7 @@ public class Test1 {
 
     public static void main(String[] args) {
 
+        //collection List<>
         List<Figure> figures = new ArrayList<Figure>();
         Disque d1 = new Disque(5,6,3);
         Rectangle r1 = new Rectangle(2,3,5,3);
@@ -24,6 +25,14 @@ public class Test1 {
         Iterator<Figure> iterator = figures.iterator();
         while(iterator.hasNext()){
             totArea = totArea + iterator.next().getArea();
+        }
+
+        totArea = 0;
+
+        //tableau
+        Figure tableau[] = {d1, r1, s1};
+        for(Figure e : tableau){
+            totArea = totArea + e.getArea();
         }
 
         System.out.println("L'aire totale est "+totArea);
