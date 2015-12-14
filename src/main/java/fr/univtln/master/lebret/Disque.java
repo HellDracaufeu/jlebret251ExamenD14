@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by RedQueen on 14/12/2015.
  */
-public class Disque extends Figure{
+public class Disque extends Figure implements Comparable<Disque>{
     private int x;
     private int y;
     private int rayon;
@@ -44,5 +44,10 @@ public class Disque extends Figure{
 
     public double getArea(){
         return (3.14*rayon);
+    }
+
+
+    public int compareTo(Disque o) {
+        return (int)(this.getArea() - o.getArea());
     }
 }
